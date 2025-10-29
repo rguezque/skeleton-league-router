@@ -8,14 +8,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Project\\": "src/",
+            "Core\\": "src/",
             "App\\": "app/"
         },
         "files": ["src/functions/helpers.php"]
     },
     "scripts": {
         "post-install-cmd": [
-            "cp .env.example .env"
+            "cp ./.env.example ./.env"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S localhost:8000 -t public"
         ]
     }
 }

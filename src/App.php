@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Project;
+namespace Core;
 
 use Laminas\Diactoros\ResponseFactory;
 use League\Container\Container;
