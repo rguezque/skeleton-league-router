@@ -12,7 +12,7 @@ $container = require __DIR__.'/dependencies.php';
 
 App::configure(
     set_static_dir: '/static', 
-    use_api_strategy: true,
+    use_api_strategy: false,
     set_container: $container
 );
 
