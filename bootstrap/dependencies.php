@@ -19,6 +19,8 @@ $container->add('Twig', function() {
     $loader = new FilesystemLoader(__DIR__.'/../templates');
     return new Environment($loader, [
         'cache' => __DIR__.'/../templates/cache',
+        'auto_reload' => true,
+        'strict_variables' => true,
     ]);
 });
 

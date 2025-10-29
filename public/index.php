@@ -10,7 +10,7 @@ if(file_exists($maintenance = __DIR__.'/templates/site/maintenance.php')) {
 
 require __DIR__.'/../vendor/autoload.php';
 require __DIR__.'/../bootstrap/app.php';
-/** @var Router Definición de rutas */
+/** @var League\Route\Router Definición de rutas */
 $app = require __DIR__.'/../routes/web.php';
 
 
